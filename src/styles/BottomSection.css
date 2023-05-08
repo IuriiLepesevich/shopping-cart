@@ -1,0 +1,47 @@
+.BottomSection {
+  height: 45rem;
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+.BottomSection > .heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.BottomSection > .values {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15%;
+}
+
+.BottomSection .ValueHolder > .image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  box-shadow: 0px 0px 50px black;
+  transition: 0.9s ease-out;
+}
+
+.BottomSection .ValueHolder > .image:hover {
+  box-shadow: 0px 0px 50px blueviolet;
+}
+
+.BottomSection .ValueHolder:nth-child(1) > .image {
+  /* Photo by Joshua Mcknight: https://www.pexels.com/photo/woman-wearing-red-and-multicolored-crop-top-1544724/ */
+  background-image: url("../images/high-quality.png");
+}
+
+.BottomSection .ValueHolder:nth-child(2) > .image {
+  /* Photo by WARLEY VENANCIO: https://www.pexels.com/photo/woman-sitting-on-wooden-carriage-2657704/ */
+  background-image: url("../images/collection.png");
+  background-position: 40% 0%;
+}
+
+.BottomSection .ValueHolder:nth-child(3) > .image {
+  /* Photo by Keith Lobo: https://www.pexels.com/photo/stylish-young-ethnic-guy-with-flowers-on-background-3907595/ */
+  background-image: url("../images/service.png");
+  background-position: 10% 40%;
+}

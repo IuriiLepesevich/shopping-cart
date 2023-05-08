@@ -1,0 +1,48 @@
+.Hero {
+  height: 45rem;
+  min-width: 1100px;
+  background-image: url("../images/home-hero.png");
+  background-repeat: no-repeat;
+  background-position: 0% 10%;
+  background-size: 105% auto;
+  position: relative;
+  transition: 0.9s ease-out;
+}
+
+.Hero:hover {
+  background-size: 100% auto;
+}
+
+.Hero > .text {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 15px 20px;
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  max-width: 50ch;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.Hero .heading {
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+}
+
+.Hero .to-shop {
+  background-color: white;
+  width: fit-content;
+  padding: 7px 15px;
+  font-size: 1.5rem;
+  box-shadow: 3px 3px 0 1px blueviolet;
+  transition: 0.3s;
+}
+
+.Hero .to-shop:hover {
+  background-color: blueviolet;
+  box-shadow: 3px 3px 0 1px white;
+  color: white;
+  transition: 0.3s;
+}

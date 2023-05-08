@@ -17,7 +17,7 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 
 a {
@@ -27,9 +27,9 @@ a {
 
 .NavBar :is(.logo, li) {
   border-bottom: 3px solid black;
+  transition: 0.3s;
 }
 
 .NavBar :is(.logo, li):hover {
   border-bottom: 3px solid blueviolet;
-  transition: 0.3s;
 }

@@ -1,0 +1,24 @@
+.ValueHolder {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  gap: 30px;
+}
+
+.ValueHolder > .image {
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+}
+
+.ValueHolder > .heading {
+    text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.ValueHolder > .text {
+  text-align: justify;
+  text-justify: inter-word;
+  font-size: 1.1rem;
+}

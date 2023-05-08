@@ -1,0 +1,56 @@
+.TopSection {
+  background-color: rgb(226, 226, 226);
+  height: 45rem;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.TopSection > div {
+  display: flex;
+  max-height: 100%;
+}
+
+.TopSection .text {
+  flex: 8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+  font-size: 2rem;
+  padding: 40px;
+}
+
+.TopSection .text > .heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  background-color: blueviolet;
+  color: white;
+  padding: 5px 10px;
+}
+
+.TopSection .image {
+  flex: 7;
+}
+
+.TopSection .image {
+  background-repeat: no-repeat;
+  background-size: 110% auto;
+  position: relative;
+  transition: 0.9s ease-out;
+}
+
+.TopSection > .top > .image {
+  /* Photo by uncoveredlens Eze Joshua : https://www.pexels.com/photo/photo-of-man-bringing-radio-3620411/ */
+  background-image: url("../images/home-top.png");
+  background-position: 0% 10%;
+}
+
+.TopSection > .bottom > .image {
+  /* Photo by Cole Keister: https://www.pexels.com/photo/woman-wearing-blue-blouse-2466756/ */
+  background-image: url("../images/home-bottom.png");
+  background-position: 10% 55%;
+}
+
+.TopSection .image:hover {
+  background-size: 100% auto;
+}
