@@ -1,0 +1,13 @@
+.Contact {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.Contact > ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2rem;
+  gap: 10px;
+}

@@ -1,0 +1,35 @@
+.NavBar {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: black;
+  color: white;
+  padding: 20px 30px;
+}
+
+.NavBar > .logo {
+  font-size: 2rem;
+  font-weight: bold;
+  width: fit-content;
+}
+
+.NavBar > ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 1.3rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.NavBar :is(.logo, li) {
+  border-bottom: 3px solid black;
+}
+
+.NavBar :is(.logo, li):hover {
+  border-bottom: 3px solid blueviolet;
+  transition: 0.3s;
+}
