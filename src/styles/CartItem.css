@@ -1,0 +1,30 @@
+.CartItem {
+  padding: 20px 50px;
+  display: flex;
+  gap: 50px;
+}
+
+.CartItem > .image {
+  width: 150px;
+  padding-bottom: 150px;
+  background-image: url("../images/test.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: white;
+}
+
+.CartItem .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex: 1;
+}
+
+.CartItem .text .name {
+  font-size: 1.5rem;
+}
+
+.CartItem .text .price {
+  font-size: 1.1rem;
+  font-weight: bold;
+}

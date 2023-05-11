@@ -1,0 +1,8 @@
+.CartItemList {
+  display: flex;
+  flex-direction: column;
+}
+
+.CartItemList > div:not(:first-child) {
+  border-top: 1px solid rgb(211, 211, 211);
+}

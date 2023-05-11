@@ -4,6 +4,10 @@
   background-color: black;
   color: white;
   padding: 20px 30px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  z-index: 10;
 }
 
 .NavBar > .logo {
@@ -32,4 +36,18 @@ a {
 
 .NavBar :is(.logo, li):hover {
   border-bottom: 3px solid blueviolet;
+}
+
+.NavBar .cart {
+  position: relative;
+}
+
+.NavBar .cart .size {
+  text-align: center;
+  width: 30px;
+  position: absolute;
+  top: 50%;
+  right: -50%;
+  background-color: blueviolet;
+  border-radius: 50%;
 }

@@ -4,6 +4,11 @@
   flex-direction: column;
   gap: 15px;
   padding: 15px;
+  transition: 0.3s;
+}
+
+.Product:hover {
+  transform: scale(1.03);
 }
 
 .Product > .image {
@@ -12,6 +17,7 @@
   background-image: url("../images/test.png");
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: white;
 }
 
 .Product > .name {

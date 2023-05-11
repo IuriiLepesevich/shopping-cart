@@ -1,0 +1,33 @@
+.AmountController {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  text-align: center;
+}
+
+.AmountController .amount {
+  border: none;
+  width: 50px;
+  font-size: 1.7rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.AmountController .amount:focus {
+  outline: none;
+}
+
+.AmountController :is(.decrement, .increment) {
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 50%;
+  background-color: black;
+  color: white;
+  width: 30px;
+  cursor: default;
+  transition: 0.3s;
+}
+
+.AmountController :is(.decrement, .increment):hover {
+  background-color: blueviolet;
+}

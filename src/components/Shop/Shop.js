@@ -1,11 +1,10 @@
 import "../../styles/Shop.css";
-import productsArray from "./productsArray";
 import FilterFrame from "./FilterFrame";
 import GoodsCatalog from "./GoodsCatalog";
 import { useEffect, useState } from "react";
 
 const Shop = (props) => {
-  const [products, setProducts] = useState(productsArray);
+  const { products, handleAdd } = props;
   const [filter, setFilter] = useState([
     {
       name: "",
@@ -57,7 +56,11 @@ const Shop = (props) => {
         handleNameInput={handleNameInput}
         handleTypeClick={handleTypeClick}
       />
-      <GoodsCatalog products={filteredProducts} />
+      {filteredProducts.length > 0 ? (
+        <GoodsCatalog products={filteredProducts} handleAdd={handleAdd} />
+      ) : (
+        <div className="not-found">No items were found...</div>
+      )}
     </div>
   );
 };

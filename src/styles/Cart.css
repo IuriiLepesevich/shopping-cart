@@ -1,0 +1,52 @@
+.Cart {
+  margin: 0px auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px 10px;
+  width: fit-content;
+}
+
+.Cart .not-found {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-top: 150px;
+}
+
+.Cart .to-shop {
+  margin-top: 50px;
+  background-color: black;
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+  padding: 15px 75px;
+  transition: 0.3s;
+}
+
+.Cart .to-shop:hover {
+  background-color: blueviolet;
+}
+
+.Cart .total {
+  font-size: 1.3rem;
+  font-weight: bold;
+  align-self: end;
+  margin-top: -25px;
+}
+
+.Cart .buy {
+  cursor: default;
+  background-color: black;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  transition: 0.3s;
+}
+
+.Cart .buy:hover {
+  background-color: blueviolet;
+}
