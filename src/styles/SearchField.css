@@ -1,0 +1,21 @@
+.SearchField {
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.SearchField > input {
+  font-size: 1.4rem;
+  width: 100%;
+  border: none;
+  background-color: rgb(211, 211, 211);
+  padding: 5px;
+  border: 2px solid rgb(211, 211, 211);
+}
+
+.SearchField > input:focus {
+  outline: none;
+  border-color: blueviolet;
+}

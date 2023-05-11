@@ -1,0 +1,43 @@
+.Product {
+  background-color: rgb(211, 211, 211);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 15px;
+}
+
+.Product > .image {
+  width: 100%;
+  padding-bottom: 100%;
+  background-image: url("../images/test.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Product > .name {
+  font-size: 1.4rem;
+  margin-bottom: -10px;
+}
+
+.Product > .price {
+  font-size: 1.1rem;
+  font-weight: bold;
+  flex: 1;
+}
+
+.Product > .add {
+  cursor: default;
+  font-size: 1.3rem;
+  font-weight: bold;
+  background-color: black;
+  color: white;
+  width: 60%;
+  align-self: center;
+  padding: 5px 8px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.Product > .add:hover {
+  background-color: blueviolet;
+}
