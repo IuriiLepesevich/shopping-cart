@@ -2,7 +2,7 @@ import "../../styles/CartItem.css";
 import AmountController from "./AmountController";
 
 const CartItem = (props) => {
-  const { name, type, price, amount, id, decrement, increment } = props;
+  const { name, price, amount, id, decrement, increment } = props;
   return (
     <div className="CartItem">
       <div className="image"></div>

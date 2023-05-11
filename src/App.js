@@ -6,6 +6,7 @@ import Home from "./components/Home/Home";
 import Shop from "./components/Shop/Shop";
 import Cart from "./components/Cart/Cart";
 import Footer from "./components/Footer/Footer";
+import ItemPage from "./components/ItemPage";
 import { useEffect, useState } from "react";
 
 function App() {
@@ -14,7 +15,7 @@ function App() {
   const [cartItemsAmount, setCartItemsAmount] = useState(0);
   const [cartItemsTotalPrice, setCartItemsTotalPrice] = useState(0);
 
-  const addToCart = (e) => {
+  const addToCart = (e, addAmount = 1) => {
     const targetId = e.target.id;
     if (
       cartItems.some((someItem) => {
@@ -27,7 +28,7 @@ function App() {
                   type: mapItem.type,
                   price: mapItem.price,
                   id: mapItem.id,
-                  amount: mapItem.amount + 1,
+                  amount: mapItem.amount + addAmount,
                 };
               else return mapItem;
             })
@@ -45,7 +46,7 @@ function App() {
           type: newItem.type,
           price: newItem.price,
           id: targetId,
-          amount: 1,
+          amount: addAmount,
         })
       );
     }
@@ -116,6 +117,10 @@ function App() {
                 increment={incrementCartItemAmount}
               />
             }
+          />
+          <Route
+            path="shop/item/:namePath"
+            element={<ItemPage items={products} addToCart={addToCart} />}
           />
         </Routes>
       </main>

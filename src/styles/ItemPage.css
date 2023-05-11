@@ -1,0 +1,55 @@
+.ItemPage {
+  margin: 100px auto;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid blueviolet;
+  padding: 40px 50px;
+  gap: 50px;
+}
+
+.ItemPage .image {
+  width: 200px;
+  padding-bottom: 200px;
+  background-image: url("../images/test.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: white;
+}
+
+.ItemPage .border {
+  height: 250px;
+  border-right: 1px solid rgb(211, 211, 211);
+}
+
+.ItemPage .text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.ItemPage .text .name {
+  text-align: justify;
+  font-size: 1.5rem;
+}
+
+.ItemPage .text .price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  align-self: flex-start;
+}
+
+.ItemPage .text .add {
+  background-color: black;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 15px 30px;
+  transition: 0.3s;
+}
+
+.ItemPage .text .add:hover {
+  background-color: blueviolet;
+}
