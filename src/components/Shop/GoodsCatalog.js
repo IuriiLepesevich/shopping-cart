@@ -7,6 +7,7 @@ const GoodsCatalog = (props) => {
     <div className="GoodsCatalog">
       {products.map((product) => (
         <Product
+          key={product.name}
           name={product.name}
           type={product.type}
           price={product.price}

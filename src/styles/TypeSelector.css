@@ -14,11 +14,15 @@
 .TypeSelector .type {
   font-size: 1.3rem;
   width: fit-content;
-  border-bottom: 2px solid white;
+  border-bottom: 3px solid white;
   transition: 0.3s;
   cursor: default;
 }
 
 .TypeSelector .type:hover {
+  border-color: blueviolet;
+}
+
+.TypeSelector .type.selected {
   border-color: blueviolet;
 }
