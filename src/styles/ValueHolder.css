@@ -1,7 +1,8 @@
 .ValueHolder {
   display: flex;
   flex-direction: column;
-  width: 300px;
+  align-items: center;
+  width: 25%;
   gap: 30px;
 }
 
@@ -30,4 +31,24 @@
 
 .ValueHolder > .image:hover {
   box-shadow: 0px 0px 50px blueviolet;
+}
+
+@media only screen and (max-width: 800px) {
+  .ValueHolder {
+    width: 70%;
+    gap: 30px;
+  }
+  .ValueHolder > .image {
+    width: 70%;
+    height: 0;
+    padding-bottom: 70%;
+    box-shadow: none;
+  }
+  .ValueHolder > .heading {
+    font-size: calc(1rem + 0.5vw);
+  }
+
+  .ValueHolder > .text {
+    font-size: calc(0.5rem + 1vw);
+  }
 }

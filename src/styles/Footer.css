@@ -28,5 +28,16 @@
 }
 
 .Footer .info {
-    padding-left: 20px;
+  padding-left: 20px;
+}
+
+@media only screen and (max-width: 800px) {
+  .Footer > .bottom {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto 1fr;
+    grid-gap: 20px;
+  }
+  .Footer .subscribe {
+    grid-column: 1 / -1;
+  }
 }

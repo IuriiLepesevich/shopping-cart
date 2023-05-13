@@ -16,12 +16,12 @@
   flex-direction: column;
   justify-content: center;
   gap: 40px;
-  font-size: 2rem;
-  padding: 40px;
+  font-size: calc(1rem + 1vw);
+  padding: 2%;
 }
 
 .TopSection .text > .heading {
-  font-size: 2.5rem;
+  font-size: calc(1rem + 2vw);
   font-weight: bold;
   background-color: blueviolet;
   color: white;
@@ -29,6 +29,7 @@
 }
 
 .TopSection .image {
+  height: 100%;
   flex: 7;
 }
 
@@ -53,4 +54,10 @@
 
 .TopSection .image:hover {
   background-size: 100% auto;
+}
+
+@media only screen and (max-width: 800px) {
+  .TopSection {
+    height: fit-content;
+  }
 }

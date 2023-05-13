@@ -8,10 +8,11 @@
   position: sticky;
   top: 0px;
   z-index: 10;
+  align-items: center;
 }
 
 .NavBar > .logo {
-  font-size: 2rem;
+  font-size: calc(1rem + 1.5vw);
   font-weight: bold;
   width: fit-content;
 }
@@ -21,7 +22,7 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  font-size: 1.5rem;
+  font-size: calc(1rem + 1vw);
 }
 
 a {
@@ -50,4 +51,10 @@ a {
   right: -50%;
   background-color: blueviolet;
   border-radius: 50%;
+}
+
+@media only screen and (max-width: 800px) {
+  .NavBar {
+    padding: 10px 20px;
+  }
 }

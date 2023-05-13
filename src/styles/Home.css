@@ -3,3 +3,9 @@
   flex-direction: column;
   gap: 10vh;
 }
+
+@media only screen and (max-width: 800px) {
+  .Home {
+    gap: 5vh;
+  }
+}
