@@ -28,3 +28,14 @@
   font-size: 1.1rem;
   font-weight: bold;
 }
+
+@media only screen and (max-width: 800px) {
+  .CartItem {
+    padding: 20px 5px;
+    display: flex;
+    gap: 20px;
+  }
+  .CartItem .text .name {
+    font-size: calc(1rem + 0.2vw)
+  }
+}

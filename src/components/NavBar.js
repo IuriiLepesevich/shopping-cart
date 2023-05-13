@@ -17,7 +17,11 @@ const NavBar = (props) => {
         </li>
         <li className="cart">
           <Link to="/cart">Cart</Link>
-          {cartSize > 0 && <div className="size">{cartSize}</div>}
+          {cartSize > 0 && (
+            <div className="size">
+              <div className="size_value">{cartSize}</div>
+            </div>
+          )}
         </li>
       </ul>
     </nav>

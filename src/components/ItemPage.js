@@ -22,25 +22,27 @@ const ItemPage = (props) => {
 
   return (
     <div className="ItemPage">
-      <div className="image"></div>
-      <div className="border"></div>
-      <div className="text">
-        <div className="name">{name}</div>
-        <div className="price">{price}$</div>
-        <AmountController
-          amount={amount}
-          id={id}
-          decrement={decrement}
-          increment={increment}
-        />
-        <div
-          className="add"
-          id={id}
-          onClick={(e) => {
-            addToCart(e, amount);
-          }}
-        >
-          Add to cart
+      <div className="item">
+        <div className="image"></div>
+        <div className="border"></div>
+        <div className="text">
+          <div className="name">{name}</div>
+          <div className="price">{price}$</div>
+          <AmountController
+            amount={amount}
+            id={id}
+            decrement={decrement}
+            increment={increment}
+          />
+          <div
+            className="add"
+            id={id}
+            onClick={(e) => {
+              addToCart(e, amount);
+            }}
+          >
+            Add to cart
+          </div>
         </div>
       </div>
     </div>

@@ -50,3 +50,20 @@
 .Cart .buy:hover {
   background-color: blueviolet;
 }
+
+@media only screen and (max-width: 800px) {
+  .Cart {
+    padding: 5px 10px;
+  }
+  .Cart .not-found {
+    text-align: center;
+    margin-top: 60px;
+  }
+
+  .Cart .to-shop {
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 10px 50px;
+    transition: 0.3s;
+  }
+}

@@ -1,6 +1,11 @@
 .ItemPage {
-  margin: 100px auto;
-  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 10px;
+}
+
+.ItemPage .item {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -52,4 +57,19 @@
 
 .ItemPage .text .add:hover {
   background-color: blueviolet;
+}
+
+@media only screen and (max-width: 1000px) {
+  .ItemPage .item {
+    width: fit-content;
+    flex-direction: column;
+    gap: 2px;
+    padding: 10px 15px;
+  }
+  .ItemPage .border {
+    height: 1px;
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid rgb(211, 211, 211);
+  }
 }
