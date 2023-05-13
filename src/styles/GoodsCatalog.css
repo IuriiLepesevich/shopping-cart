@@ -4,3 +4,13 @@
   grid-gap: 50px 30px;
   height: fit-content;
 }
+
+@media only screen and (max-width: 800px) {
+  .GoodsCatalog {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 50px 30px;
+    height: fit-content;
+    margin-bottom: 40px;
+  }
+}

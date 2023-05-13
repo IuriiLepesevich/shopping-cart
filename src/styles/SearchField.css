@@ -19,3 +19,10 @@
   outline: none;
   border-color: blueviolet;
 }
+
+@media only screen and (max-width: 1400px) {
+  .SearchField label {
+    
+    display: none;
+  }
+}

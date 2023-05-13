@@ -9,3 +9,13 @@
   position: sticky;
   top: 100px;
 }
+
+@media only screen and (max-width: 1400px) {
+  .FilterFrame {
+    gap: 10px;
+    border-right: 1px solid rgb(211, 211, 211);
+    background-color: white;
+    position: inherit;
+    border: none;
+  }
+}
