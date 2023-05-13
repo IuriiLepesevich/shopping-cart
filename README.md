@@ -1,7 +1,6 @@
 # Shopping Cart
 
 This project was built during The Odin Project curriculum. Idea of this project is to work with React components / Hooks, practice with React Routing. You can navigate across the site using navigation menu at the top. You can add and remove items form the cart.
-### Images / GIFs are generated with giphy API.
 
 ## [Live Demo](https://iuriilepesevich.github.io/shopping-cart/)
 
