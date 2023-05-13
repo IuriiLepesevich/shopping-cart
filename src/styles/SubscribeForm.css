@@ -8,6 +8,7 @@
   background-color: white;
   padding: 5px;
   border: 2px solid white;
+  border-radius: 0px;
 }
 
 .SubscribeForm > input[type="email"]:focus {
