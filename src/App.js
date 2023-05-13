@@ -6,7 +6,7 @@ import Home from "./components/Home/Home";
 import Shop from "./components/Shop/Shop";
 import Cart from "./components/Cart/Cart";
 import Footer from "./components/Footer/Footer";
-import ItemPage from "./components/ItemPage";
+import ItemPage from "./components/Shop/ItemPage";
 import { useEffect, useState } from "react";
 
 function App() {

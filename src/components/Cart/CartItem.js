@@ -1,5 +1,5 @@
 import "../../styles/CartItem.css";
-import AmountController from "./AmountController";
+import AmountController from "../AmountController";
 
 const CartItem = (props) => {
   const { name, price, amount, id, decrement, increment } = props;

@@ -1,11 +1,11 @@
-import "../../styles/AmountController.css";
+import "../styles/AmountController.css";
 
 const AmountController = (props) => {
   const { amount, id, decrement, increment } = props;
   return (
     <div className="AmountController">
-      <div className="decrement" id={id} onClick={decrement}>
-        -
+      <div className="decrement minus" id={id} onClick={decrement}>
+        <div className="sign">-</div>
       </div>
       <input className="amount" value={amount} />
       <div
@@ -14,7 +14,7 @@ const AmountController = (props) => {
         aria-readonly={true}
         onClick={increment}
       >
-        +
+        <div className="sign">+</div>
       </div>
     </div>
   );

@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
-import "../styles/ItemPage.css";
-import AmountController from "./Cart/AmountController";
+import "../../styles/ItemPage.css";
+import AmountController from "../AmountController";
 import { useState } from "react";
 
 const ItemPage = (props) => {

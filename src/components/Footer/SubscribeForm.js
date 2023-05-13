@@ -12,7 +12,7 @@ const SubscribeForm = () => {
         id="SubscribeMail"
         placeholder="example@domen.com"
       />
-      <input type="submit" />
+      <input type="submit" defaultValue={"Submit"} />
     </form>
   );
 };

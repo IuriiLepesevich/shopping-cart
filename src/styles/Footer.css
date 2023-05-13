@@ -32,6 +32,9 @@
 }
 
 @media only screen and (max-width: 800px) {
+  .Footer {
+    padding: 10px;
+  }
   .Footer > .bottom {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto 1fr;
@@ -39,5 +42,11 @@
   }
   .Footer .subscribe {
     grid-column: 1 / -1;
+  }
+  .Footer .heading {
+    font-size: 1.1rem;
+  }
+  .Footer .info {
+    padding-left: 0px;
   }
 }

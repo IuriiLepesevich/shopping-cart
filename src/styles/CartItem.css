@@ -36,6 +36,24 @@
     gap: 20px;
   }
   .CartItem .text .name {
-    font-size: calc(1rem + 0.2vw)
+    font-size: calc(0.8rem + 0.3vw);
+  }
+  .CartItem > .image {
+    width: 70px;
+    padding-bottom: 70px;
+  }
+  .CartItem .AmountController .amount {
+    border: none;
+    width: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  .CartItem .AmountController {
+    gap: 1px;
+  }
+  .CartItem .AmountController :is(.decrement, .increment) {
+    width: 25px;
+    font-size: 1.3rem;
   }
 }
