@@ -8,7 +8,8 @@
   background-color: white;
   padding: 5px;
   border: 2px solid white;
-  border-radius: 0px;
+  appearance: none;
+  border-radius: 0;
 }
 
 .SubscribeForm > input[type="email"]:focus {
@@ -21,6 +22,8 @@
   border-color: black;
   color: white;
   transition: 0.3s;
+  appearance: none;
+  border-radius: 0;
 }
 
 .SubscribeForm > input[type="submit"]:hover {
